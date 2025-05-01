@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TODO List</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      padding-top: 60px;
+      min-height: 100vh;
+    }
+
+    .todo-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 80px;
+      margin: 0 auto 15px auto;
+      opacity: 0.5;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .task-input {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .task-input input {
+      flex: 1;
+      padding: 12px 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px 0 0 8px;
+      outline: none;
+    }
+
+    .task-input button {
+      padding: 12px 20px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 0 8px 8px 0;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .task-input button:hover {
+      background-color: #45a049;
+    }
+
+    ul {
+      list-style: none;
+      text-align: left;
+    }
+
+    li {
+      background: #f9f9f9;
+      padding: 12px 16px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.3s;
+    }
+
+    li:hover {
+      background: #f1f1f1;
+    }
+
+    .complete-btn {
+      background-color: #2196F3;
+      border: none;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+
+    .complete-btn:hover {
+      background-color: #0b7dda;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="todo-container">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/69/IIT_Madras_Logo.svg/300px-IIT_Madras_Logo.svg.png" alt="IIT Madras Logo" class="logo">
+    <h1>My TODO List</h1>
+
+    <div class="task-input">
+      <input type="text" placeholder="Add a new task..." disabled>
+      <button disabled>Add</button>
+    </div>
+
+    <ul>
+      <li>
+        Learn HTML & CSS
+        <button class="complete-btn">Done</button>
+      </li>
+      <li>
+        Design TODO Website
+        <button class="complete-btn">Done</button>
+      </li>
+      <li>
+        Add interactivity (in JS)
+        <button class="complete-btn">Done</button>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>
